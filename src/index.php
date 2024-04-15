@@ -11,6 +11,6 @@ $number1 = trim(fgets(STDIN));
 echo "Enter a square number \n";
 $number2 = trim(fgets(STDIN));
 $result1 = ($number1 + $number2);
-echo "sum  $result1 \n";
+echo "sum $result1 \n";
 $result2 = ($number1 + $number2)/2;
 echo "arithmetic mean  $result2\n";
