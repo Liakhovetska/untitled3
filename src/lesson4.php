@@ -19,6 +19,10 @@ $result = power($number, $exponent);
 
 echo pow($number, exponent:2) . PHP_EOL;
 
+$number = 5;
+
+echo pow($number, exponent:2) . PHP_EOL;
+
 
 
 function returnsNewNumber($num1, $num2 = 2) {
