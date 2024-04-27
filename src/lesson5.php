@@ -1,5 +1,35 @@
 <?php
 
+echo "Числа від 1 до 10:\n";
+$num = 1;
+while ($num <= 10) {
+    echo $num . " ";
+    $num++;
+}
+echo "\n\n";
+
+// Обчислення факторіалу числа 5 за допомогою циклу while
+echo "Факторіал числа 5:\n";
+$number = 5;
+$factorial = 1;
+while ($number > 1) {
+    $factorial *= $number;
+    $number--;
+}
+echo "Факторіал числа 5: " . $factorial . "\n\n";
+
+// Виведення парних чисел від 1 до 20 за допомогою циклу while
+echo "Парні числа від 1 до 20:\n";
+$num = 1;
+while ($num <= 20) {
+    if ($num % 2 === 0) {
+        echo $num . " ";
+    }
+    $num++;
+}
+
+
+
 $myArray = [];
 $size = 10;
 
