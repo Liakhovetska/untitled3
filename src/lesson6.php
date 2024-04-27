@@ -52,11 +52,11 @@ echo "Sorted array: " . implode(", ", $sortedArray) . PHP_EOL;
 
 
 
-function fibonacciGenerator($max_value) {
+function fibonacciGenerator($maxNumber) {
     $a = 0;
     $b = 1;
 
-    while ($a < $max_value) {
+    while ($a < $maxNumber) {
         yield $a;
         $temp = $a;
         $a = $b;
@@ -64,8 +64,8 @@ function fibonacciGenerator($max_value) {
     }
 }
 
-$max_value = 100;
+$maxValue = 100;
 
-foreach (fibonacciGenerator($max_value) as $fibonacci_number) {
-    echo $fibonacci_number . " ";
+foreach (fibonacciGenerator($maxValue) as $value) {
+    echo $value . " ";
 }
