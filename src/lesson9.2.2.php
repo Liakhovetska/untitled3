@@ -44,7 +44,8 @@ class TaskGenerator
     public function getTasks()
     {
         $sortedTasks = $this->tasks;
-        usort($sortedTasks, function ($a, $b) {
+
+        uasort($sortedTasks, function ($a, $b) {
             return $b['priority'] - $a['priority'];
         });
 
@@ -59,11 +60,10 @@ class TaskGenerator
      * @param int $taskId
      * @return bool
      */
-    public function completeTask(int $taskId)
+    public function completeTask(string $taskId)
     {
         if (isset($this->tasks[$taskId])) {
             $this->tasks[$taskId]['state'] = self::COMPLETED;
-            var_dump( $this->tasks).die();
             $this->saveTasksToFile();
             return true;
         }
